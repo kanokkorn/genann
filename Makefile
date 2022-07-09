@@ -1,5 +1,6 @@
-CFLAGS = -Wall -Wshadow -O3 -g -march=native
-LDLIBS = -lm
+CC = clang
+CFLAGS = -Wall -Wshadow -O3 -g -pedantic -march=native
+LDLIBS = -lm -fuse-ld=lld
 
 all: check example1 example2 example3 example4
 
